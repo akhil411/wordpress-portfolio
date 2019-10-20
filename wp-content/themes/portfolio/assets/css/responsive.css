@@ -76,7 +76,12 @@
       width: 200px;
       height:230px;
   }
+
+  .text ul {
+    margin-left: 0;
   }
+
+}
  
 
 
@@ -90,5 +95,10 @@
     }
   }
 
+  @media only screen and (min-width: 1475px) {
+    .navbar ul {
+      right: 55%;
+    }
+  }
 
  
