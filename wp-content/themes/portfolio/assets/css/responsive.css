@@ -1,0 +1,94 @@
+@media only screen and (max-width: 640px) { 
+    .portfolio {
+      width: 88%;
+      padding-left: 6%;
+      padding-right:6%;
+      height: auto;
+      margin-left: 0px;
+    }
+
+    .modal-content {
+      width: 100%;
+    }
+
+    h1 { 
+      font-size: 1em;
+    } 
+
+    #profile-name {
+      padding-top: 2%;
+    }
+
+    .head-wrap{
+      width: auto;
+      float: none;
+      height: 10%;
+    }
+    
+    .name {
+      left: auto;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+
+
+    }
+
+    .navbar {
+      width:100%;
+      float: none;
+      display: flex;
+      justify-content: center;
+      height: 10%;
+    }
+
+    .centre {
+      height: 75%;
+    }
+
+    ul {
+      height: auto;
+      margin-top: 35px;
+      right: auto;
+    }
+
+    .description {
+      bottom: 5%;
+      line-height: 40px;
+      width: 88%;
+
+    } 
+
+    #profile-name{
+      padding-top: 0;
+    }
+
+    .image {
+      width: auto;
+      padding: 0;
+      float: none;
+      height: auto;
+      display: flex;
+      justify-content: center;    
+  }
+  
+  .image img {
+      width: 200px;
+      height:230px;
+  }
+  }
+ 
+
+
+@media only screen and (max-width: 768px) {
+    h1 {
+      font-size: 1em;
+    }
+
+    #profile-name{
+      margin-top: 32px;
+    }
+  }
+
+
+ 

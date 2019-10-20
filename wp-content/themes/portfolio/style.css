@@ -1,0 +1,283 @@
+/*
+Theme Name: Portfolio
+Author: Akhil Vijayan
+Description: Bootstrap portfolio converted to WordPress
+Version: 0.0.1
+Tags: bootstrap
+*/
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    position: relative;
+}
+
+.footer {
+    position: absolute;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: #666666;
+    height: 5%;
+    border-top: 6px solid #4aaaa5;
+    text-align: center;
+    font-size: x-small;
+}
+
+.wrapper {
+    height: 100%;
+}
+
+.head-wrap {
+    float: left;
+    width: 50%;
+    position: relative;
+    height: 15%;
+}
+
+.name {
+    background-color: #4aaaa5;
+    position: absolute;
+    padding: 0;
+    left: 28%;
+    bottom: 0%;
+    height: 100%;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+#profile-name {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.navbar {
+    
+    width: 50%;
+    height: 15%;
+    position: relative;
+    float: left;   
+    overflow: hidden; 
+}
+
+ul {
+    padding: 0%;
+    height: auto;
+    position: absolute;
+    right: 30%;
+    bottom: 10%;
+}
+
+ul li {
+    float: left;
+    padding: 0px 6px 0px 6px;
+    list-style-type: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #4aaaa5;
+}
+.navbar li:not(:first-child):before {
+    content: " | ";
+    margin-right: 5px;
+}
+
+.centre {
+    clear: both;
+    overflow: auto;
+    background-image: url("assets/images/background.png");
+    position: relative;
+    height: 80%;
+    border-top: 1px solid #cccccc;
+}
+
+.middle {
+    position: absolute;
+    border: 2px solid #dddddd;
+    top: 8%; 
+    max-width: 960px;
+    width: 70.9%;
+    margin: auto; 
+    background-color: #ffffff;
+    left: 14%;
+}
+
+.about-me {
+    margin-left: 25px;
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-style: inset;
+    border-width: 1px;
+    color: #efefef;
+}
+
+.text {
+    margin-left: 25px;
+    margin-right: 25px;
+    
+
+}
+
+.image {
+    width: 175px;
+    padding: 1% 2% 2% 2%;
+    float: left;
+    height: 200px;
+    margin: 0% 2% 2% 2%;    
+}
+
+.image img {
+    width:175px;
+    height:200px;
+}
+
+
+
+#copyright {
+    position: absolute;
+    bottom: 30%;
+    color: #ffffff;
+    
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+.form {
+    padding: 25px;
+    color: #4aaaa5;
+  }
+
+input[type=submit]{
+    background-color: #4aaaa5;
+    color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 40px;
+    width: 80px;
+}
+
+.portfolio {
+    height: auto;
+    float: left;
+    width: 32%;
+    margin: 25px 0px 25px 25px;
+    position: relative;
+}
+
+.port-images img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.description {
+    position: absolute;
+    bottom: 8%;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    vertical-align: center;
+    line-height: 35px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+  #modal-image {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  #modal-image:hover {opacity: 0.7;}
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9);
+  }
+
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .close:hover, .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
